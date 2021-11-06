@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Interactive Map</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="CSS/stylesheet.css" />
+    <link rel="stylesheet" href="./CSS/easy-button.css">
+    <link href="./fontAwesome/css/all.css" rel="stylesheet">
+    <link data-require="bootstrap-css" data-semver="3.3.6" rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" action="myMap2.html" method="POST">
+                <table>
+                    <select class="form-control" id="countryChosen" name="countryChosen"></select>                
+                </table>
+            </form>        
+          </div>
+        </div>
+      </nav>
+    
+    <div id="map"></div>
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">&times;</span>
+
+                <div>
+                    <table>
+                        <th>Country Information</th>
+                        <tr id='countryInfo'>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <th>Weather</th>
+                        <tr id='weather'>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <th>Time Zone</th>
+                        <tr id='timeZone'>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <th>Area</th>
+                        <tr id='area'>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <th>Wiki Links</th>
+                        <tr id='wiki'>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script defer src="./fontAwesome/js/all.js"></script>
+    <script src="./JS/easy-button.js"></script>
+    <script src="JS/jQuery.js"></script>
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
